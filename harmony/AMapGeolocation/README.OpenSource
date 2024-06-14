@@ -1,0 +1,11 @@
+[
+    {
+        "Name": "react-native-amap-geolocation",
+        "License": "MIT License",
+        "License File": "Https://github.com/qiuxiang/react-native-amap-geolocation/blob/master/LICENSE",
+        "Version Number": "1.2.3",
+        "Owner" : "qiuxiang"
+        "Upstream URL": "https://github.com/qiuxiang/react-native-amap-geolocation",
+        "Description": "React Native geolocation module for Android + iOS"
+    }
+]

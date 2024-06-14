@@ -1,10 +1,10 @@
 {
   "name": "@react-native-oh-tpl/react-native-amap-geolocation",
   "version": "1.2.3-0.0.1",
-  "description": "React Native geolocation module for Mobile",
+  "description": "ReactNative geolocation module for Harmony",
   "main": "Index.ets",
   "author": "",
-  "license": "Apache-2.0",
+  "license": "MIT",
   "repository": "https://github.com/qiuxiang/react-native-amap-geolocation",
   "dependencies": {
     "@rnoh/react-native-openharmony": "file:../react_native_openharmony",

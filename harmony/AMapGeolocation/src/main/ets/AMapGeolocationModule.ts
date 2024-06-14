@@ -1,3 +1,27 @@
+/**
+ * MIT License
+ *
+ * Copyright (C) 2024 Huawei Device Co., Ltd.
+ *
+ * Permission is hereby granted, free of charge, to any person obtaining a copy
+ * of this software and associated documentation files (the "Software"), to deal
+ * in the Software without restriction, including without limitation the rights
+ * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ * copies of the Software, and to permit persons to whom the Software is
+ * furnished to do so, subject to the following conditions:
+ *
+ * The above copyright notice and this permission notice shall be included in all
+ * copies or substantial portions of the Software.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+ * SOFTWARE.
+ */
+
 import { TurboModule, TurboModuleContext } from "@rnoh/react-native-openharmony/ts";
 import hilog from '@ohos.hilog';
 import { TM } from '@rnoh/react-native-openharmony/generated/ts';
@@ -60,7 +84,6 @@ export class AMapGeolocationModule extends TurboModule implements IAMapLocationL
   };
 
   onLocationError(locationErrorInfo: e45): void {
-    hilog.debug(0xcc05, '[RNOH]', 'onLocationError :' + JSON.stringify(locationErrorInfo));
     this.errorMessage = JSON.stringify(locationErrorInfo);
   };
 
@@ -156,7 +179,6 @@ export class AMapGeolocationModule extends TurboModule implements IAMapLocationL
     if (this.client != null) {
       this.client.stopContinuousTask();
     }
-    hilog.debug(0xcc00, '[RNOH]', ':geolocation native init .....................:');
     AMapLocationManagerImpl.setApiKey(key);
     AMapLocationManagerImpl.updatePrivacyShow(AMapPrivacyShowStatus.DidShow, AMapPrivacyInfoStatus.DidContain, context);
     AMapLocationManagerImpl.updatePrivacyAgree(AMapPrivacyAgreeStatus.DidAgree, context);
@@ -172,8 +194,7 @@ export class AMapGeolocationModule extends TurboModule implements IAMapLocationL
     this.client?.setLocationOption(AMapLocationType.Updating, this.options)
     this.client?.startUpdatingLocation()
     return new Promise((resolve, reject) => {
-      hilog.debug(0xcc00, '[RNOH]',
-        ':geolocation native startUpdatingLocation result::' + this.result);
+
       if (this.result != '') {
         resolve(this.result)
       } else {
@@ -192,8 +213,6 @@ export class AMapGeolocationModule extends TurboModule implements IAMapLocationL
     this.client?.setLocationListener(AMapLocationType.Last, this);
     this.client?.requestLastLocation();
     return new Promise((resolve, reject) => {
-      hilog.debug(0xcc00, '[RNOH]',
-        ':geolocation native getLastKnownLocation result:' + this.result);
       if (this.result != '') {
         resolve(this.result)
       } else {
@@ -207,7 +226,6 @@ export class AMapGeolocationModule extends TurboModule implements IAMapLocationL
     this.client?.setLocationOption(AMapLocationType.Single, this.options)
     this.client?.requestSingleLocation()
     return new Promise((resolve, reject) => {
-      hilog.debug(0xcc00, '[RNOH]', ':geolocation native setOnceLocation result:' + this.result);
       if (this.result != '') {
         resolve(this.result)
       } else {
