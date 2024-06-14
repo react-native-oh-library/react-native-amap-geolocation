@@ -1,0 +1,1 @@
+export declare class SDKInfo { private k21; private l21; private n21; private o21; private p21; private q21; constructor(version: string, v43: string, w43: string, x43: string, y43: string[]); r21(): string; getSDKVersion(): string; s21(): string; t21(): string; u21(): string[]; setUpdateLog(u43: boolean): void; v21(): boolean; } 

@@ -1,0 +1,9 @@
+{
+	"module": {
+		"name": "amap_lbs_location",
+		"type": "har",
+		"deviceTypes": [
+			"default"
+		]
+	}
+}

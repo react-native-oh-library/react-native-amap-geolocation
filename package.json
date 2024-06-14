@@ -1,5 +1,5 @@
 {
-  "name": "react-native-amap-geolocation",
+  "name": "@react-native-oh-tpl/react-native-amap-geolocation",
   "description": "React Native geolocation module for Android + iOS",
   "keywords": [
     "react-native",
@@ -7,7 +7,7 @@
     "location",
     "geolocation"
   ],
-  "version": "0.0.0",
+  "version": "1.2.3-0.0.1",
   "author": "7c00 <i@7c00.cc>",
   "repository": {
     "type": "git",
@@ -23,7 +23,7 @@
     "lib/android/src",
     "lib/android/build.gradle"
   ],
-  "main": "lib/js",
+  "main": "src/index.js",
   "scripts": {
     "build-docs": "npx typedoc --out docs/api --excludeNotExported --module commonjs --mode file src",
     "start": "react-native start",
@@ -36,7 +36,16 @@
     "@types/react-native": "^0.71.2",
     "react": "^18.2.0",
     "react-native": "^0.71.2",
-    "typescript": "^5.0.4"
+    "typescript": "^5.0.4",
+	"react-native-amap-geolocation": "^1.2.3"
+  },
+   "harmony": {
+    "alias": "react-native-amap-geolocation",
+    "codegenConfig": {
+      "specPaths": [
+        "./src"
+      ]
+    }
   },
   "prettier": {
     "printWidth": 100

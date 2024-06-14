@@ -1,0 +1,1 @@
+export declare class MD5 { static getMd5StandardString(source: string | null): string; static b35(data: string): string; static j15(input: string): Promise<string>; static c35(input: Uint8Array): Promise<Uint8Array>; } 

@@ -1,0 +1,1 @@
+export declare class p47 { static addTask(func: Function, ...args: object[]): void; } 

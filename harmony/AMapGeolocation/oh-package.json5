@@ -1,0 +1,17 @@
+{
+  "name": "@react-native-oh-tpl/react-native-amap-geolocation",
+  "version": "1.2.3-0.0.1",
+  "description": "React Native geolocation module for Mobile",
+  "main": "Index.ets",
+  "author": "",
+  "license": "Apache-2.0",
+  "repository": "https://github.com/qiuxiang/react-native-amap-geolocation",
+  "dependencies": {
+    "@rnoh/react-native-openharmony": "file:../react_native_openharmony",
+    "rnoh": "file:../react_native_openharmony",
+    "@amap/amap_lbs_common": "file:../amap_lbs_common",
+    "@amap/amap_lbs_location": "file:../amap_lbs_location"
+  },
+  "devDependencies": {},
+  "dynamicDependencies": {}
+}

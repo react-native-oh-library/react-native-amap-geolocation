@@ -1,0 +1,1 @@
+import http from '@ohos.net.http'; import HashMap from '@ohos.util.HashMap'; export interface IRequest extends http.HttpRequestOptions { url: string; params?: HashMap<string, string>; isREST?: boolean; isPandoraBody?: boolean; k12?: string; o12?: string; n12?: string; encryptedData?: Uint8Array; needParseData?: boolean; } 

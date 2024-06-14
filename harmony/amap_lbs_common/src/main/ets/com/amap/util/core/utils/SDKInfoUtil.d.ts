@@ -1,0 +1,1 @@
+import { SDKInfo } from '../SDKInfo'; export declare class o41 { private z36; constructor(); j26(s46: SDKInfo): void; y19(r46: string): SDKInfo | undefined; } export declare const g20: o41; 

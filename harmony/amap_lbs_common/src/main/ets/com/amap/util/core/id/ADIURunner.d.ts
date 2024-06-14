@@ -1,0 +1,1 @@
+import { q47 } from '../net/IRunner'; export interface k45 extends q47 { k17(): string; } 

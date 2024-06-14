@@ -1,0 +1,1 @@
+export declare function e27(): string; 

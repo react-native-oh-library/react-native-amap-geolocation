@@ -1,0 +1,1 @@
+import { AMapLocationReGeoInfo } from './AMapLocationReGeocode'; export interface n45 { j6: (lat: number, lon: number) => Promise<AMapLocationReGeoInfo>; } 

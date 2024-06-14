@@ -1,0 +1,1 @@
+export declare class LogUtil { private static v34; private static w34; private static x34; static i(t43: string, tag: string, format: string): void; static d(s43: string, tag: string, format: string): void; static w(r43: string, tag: string, format: string): void; static e(q43: string, tag: string, format: string): void; } 

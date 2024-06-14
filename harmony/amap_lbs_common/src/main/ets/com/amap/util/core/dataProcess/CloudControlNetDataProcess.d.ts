@@ -1,0 +1,1 @@
+import { IRequest } from '../net/IRequest'; import { i46 } from './INetDataProcess'; export declare class c12 implements i46 { private g11; h11(request: IRequest): IRequest; j11(request: IRequest): IRequest; } 

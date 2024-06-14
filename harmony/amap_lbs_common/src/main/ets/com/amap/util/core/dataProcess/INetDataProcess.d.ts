@@ -1,0 +1,1 @@
+import { IRequest } from '../net/IRequest'; export interface i46 { h11?(request: IRequest): IRequest; j10?(request: IRequest): Promise<IRequest>; } 
