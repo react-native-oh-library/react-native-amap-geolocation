@@ -1,0 +1,1 @@
+export class TextUtils { static isEmpty(text) { if (text == undefined) { return true; } else { return text.length == 0; } } static equals(j21, k21) { return j21 == k21; } static x21(text) { return false; } } 

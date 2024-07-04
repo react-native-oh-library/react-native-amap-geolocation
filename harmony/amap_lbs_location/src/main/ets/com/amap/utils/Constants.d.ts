@@ -1,0 +1,1 @@
+export declare class Constants { static f6: string; static l6: string; static s8: string; static p6: string; static t8: string; } 

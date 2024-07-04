@@ -1,0 +1,1 @@
+import ArrayList from '@ohos.util.ArrayList'; import { IRequest } from '../net/IRequest'; import { i46 } from './INetDataProcess'; export declare class r12 implements i46 { j10(request: IRequest): Promise<IRequest>; f12(request: IRequest): Promise<IRequest>; g12(request: IRequest): ArrayList<Uint8Array>; } 

@@ -1,0 +1,1 @@
+import { w20 } from './Rom'; export declare class RomIdentifier { private static p20; static o20(): w20; static getDeviceType(): string; static t20(): string; static u20(): string; static v20(): string; static q20(): string; static s20(): string; static r20(): number; static x20(): string; } 

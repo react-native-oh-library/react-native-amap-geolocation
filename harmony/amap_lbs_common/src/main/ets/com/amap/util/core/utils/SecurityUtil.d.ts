@@ -1,0 +1,1 @@
+export declare class SecurityUtil { static e17(): Promise<string>; } 

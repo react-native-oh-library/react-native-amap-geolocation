@@ -1,0 +1,1 @@
+export declare class KVUtil { private i15; private options; constructor(context: Context); k32(key?: string, value?: Uint8Array | string | number | boolean): void; getValue(key: string): boolean | string | number | Uint8Array | undefined; l32(key: string): void; } 

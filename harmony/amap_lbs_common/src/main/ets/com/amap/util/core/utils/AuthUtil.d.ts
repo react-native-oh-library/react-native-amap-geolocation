@@ -1,0 +1,1 @@
+import HashMap from '@ohos.util.HashMap'; export declare function boolValueWithAuthResponse(response: HashMap<string, string>): boolean; 

@@ -1,0 +1,1 @@
+export interface e45 { errorCode: number; errorMsg: string; } 

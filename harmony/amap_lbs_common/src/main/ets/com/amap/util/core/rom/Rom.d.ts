@@ -1,0 +1,1 @@
+export declare class w20 { c20: string | undefined; versionCode: number | undefined; d20: string | undefined; versionName: string | undefined; manufacturer: string | undefined; } 

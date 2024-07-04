@@ -1,0 +1,1 @@
+import util from '@ohos.util'; export function e27() { let uuid = util.generateRandomUUID(true); uuid !== undefined ? uuid : ''; return uuid; } 

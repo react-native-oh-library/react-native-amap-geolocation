@@ -1,0 +1,1 @@
+import http from '@ohos.net.http'; export interface IResponse extends http.HttpResponse { message?: string; commonResponseResult?: p43; } export interface p43 { status?: string; info?: string; infocode?: string; } 
