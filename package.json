@@ -17,11 +17,8 @@
   "files": [
     "src",
     "react-native.config.js",
-    "react-native-amap-geolocation.podspec",
-    "lib/js",
-    "lib/ios",
-    "lib/android/src",
-    "lib/android/build.gradle"
+    "harmony",
+    "lib/js"
   ],
   "main": "src/index.js",
   "scripts": {
