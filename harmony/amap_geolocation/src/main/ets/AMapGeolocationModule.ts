@@ -30,21 +30,21 @@ import {
   AMapLocationManagerImpl,
   AMapLocationOption,
   AMapLocation
-} from '@amap/amap_lbs_location';
+} from '../../../IndexMap';
 
 import abilityAccessCtrl, { PermissionRequestResult } from '@ohos.abilityAccessCtrl';
 import common from '@ohos.app.ability.common';
-import { AMapPrivacyShowStatus, AMapPrivacyInfoStatus, AMapPrivacyAgreeStatus, } from '@amap/amap_lbs_common'
+import { AMapPrivacyShowStatus, AMapPrivacyInfoStatus, AMapPrivacyAgreeStatus, } from '../../../IndexMap';
 
-import { AMapLocationReGeocodeLanguage } from '@amap/amap_lbs_location'
+import { AMapLocationReGeocodeLanguage } from '../../../IndexMap';
 
 import { CommonConstants } from './CommonConstants'
 import geoLocationManager from '@ohos.geoLocationManager';
 import systemDateTime from '@ohos.systemDateTime';
-import { AMapLocationType } from '@amap/amap_lbs_location/src/main/ets/com/amap/interface/AMapLocationCommonObj';
+import { AMapLocationType } from '../../../IndexMap';
 import bundleManager from '@ohos.bundle.bundleManager';
 import { Permissions } from '@ohos.abilityAccessCtrl';
-import { e45 } from '@amap/amap_lbs_location/src/main/ets/com/amap/location/AMapLocationErrorInfo';
+import { e45 } from '../../../IndexMap';
 
 import { BusinessError } from '@ohos.base';
 import { Context } from '@kit.AbilityKit';

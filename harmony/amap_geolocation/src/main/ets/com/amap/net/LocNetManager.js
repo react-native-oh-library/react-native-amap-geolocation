@@ -1,4 +1,4 @@
-import { LogUtil, NetManager } from '@amap/amap_lbs_common';
+import { LogUtil, NetManager } from '../../../../../../IndexMap';
 import HashMap from '@ohos.util.HashMap';
 import util from '@ohos.util';
 import { n12 } from './LocInfoParser';
