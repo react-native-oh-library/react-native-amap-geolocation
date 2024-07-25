@@ -7,10 +7,7 @@
   "license": "MIT",
   "repository": "https://github.com/qiuxiang/react-native-amap-geolocation",
   "dependencies": {
-    "@rnoh/react-native-openharmony": "file:../react_native_openharmony",
-    "rnoh": "file:../react_native_openharmony",
-    "@amap/amap_lbs_common": "file:../amap_lbs_common",
-    "@amap/amap_lbs_location": "file:../amap_lbs_location"
+    "@rnoh/react-native-openharmony": "file:../react_native_openharmony"
   },
   "devDependencies": {},
   "dynamicDependencies": {}

@@ -1,7 +1,7 @@
 import geoLocationManager from '@ohos.geoLocationManager';
-import { LogUtil, privacyImpl, PermissionUtil, SDKInfo, authManager } from '@amap/amap_lbs_common';
+import { LogUtil, privacyImpl, PermissionUtil, SDKInfo, authManager } from '../../../../../../IndexMap';
 import { u8 } from '../net/LocNetManager';
-import { LocationOffsetUtils } from '@amap/amap_lbs_common';
+import { LocationOffsetUtils } from '../../../../../../IndexMap';
 import {
     AMapLocationErrorCode,
     AMapLocationReGeocodeLanguage,

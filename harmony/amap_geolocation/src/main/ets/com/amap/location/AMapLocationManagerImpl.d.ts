@@ -1,7 +1,7 @@
 import geoLocationManager from '@ohos.geoLocationManager';
 import { IAMapLocationListener, AMapLocationManager } from '../interface/AMapLocationManager';
 import { AMapLocationOption } from './AMapLocationOption';
-import { AMapPrivacyShowStatus, AMapPrivacyInfoStatus, AMapPrivacyAgreeStatus } from '@amap/amap_lbs_common';
+import { AMapPrivacyShowStatus, AMapPrivacyInfoStatus, AMapPrivacyAgreeStatus } from '../../../../../../IndexMap';
 import { AMapLocationType } from '../interface/AMapLocationCommonObj';
 import { Context } from '@kit.AbilityKit';
 

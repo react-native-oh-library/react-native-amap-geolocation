@@ -1,6 +1,6 @@
 {
   "module": {
-    "name": "AMapGeolocation",
+    "name": "amap_geolocation",
     "type": "har",
     "deviceTypes": [
       "default",
