@@ -20,7 +20,7 @@
     "harmony",
     "lib/js"
   ],
-  "main": "src/index.js",
+  "main": "lib/js",
   "scripts": {
     "build-docs": "npx typedoc --out docs/api --excludeNotExported --module commonjs --mode file src",
     "start": "react-native start",
@@ -33,10 +33,12 @@
     "@types/react-native": "^0.71.2",
     "react": "^18.2.0",
     "react-native": "^0.71.2",
-    "typescript": "^5.0.4",
-	"react-native-amap-geolocation": "^1.2.3"
+    "typescript": "^5.0.4"
   },
-   "harmony": {
+  "dependencies": {
+    "react-native-amap-geolocation": "^1.2.3"
+  },
+  "harmony": {
     "alias": "react-native-amap-geolocation",
     "codegenConfig": {
       "specPaths": [

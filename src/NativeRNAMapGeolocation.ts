@@ -25,31 +25,46 @@
 import type { TurboModule } from "react-native/Libraries/TurboModule/RCTExport";
 import { TurboModuleRegistry } from "react-native";
 
-export interface Spec extends TurboModule {
-    init(key: string): void;
+enum GeoLanguage {
+	/**
+	 * 默认，根据位置按照相应的语言返回逆地理信息，在国外按英语返回，在国内按中文返回
+	 */
+	DEFAULT = "DEFAULT",
 
-	start(): Promise<string>;
+	/**
+	 * 中文，无论在国外还是国内都为返回中文的逆地理信息
+	 */
+	ZH = "ZH",
+
+	/**
+	 * 英文，无论在国外还是国内都为返回英文的逆地理信息
+	 */
+	EN = "EN"
+}
+
+
+export interface Spec extends TurboModule {
+	init(key: string): Promise<void>;
+
+	start(): void;
 
 	stop(): void;
 
 	setInterval(interval: number): void;
 
 	setNeedAddress(value: boolean): void;
-	
+
 	setLocationTimeout(value: number): void;
 
 	setAllowsBackgroundLocationUpdates(isAllow: boolean): void;
-	
+
 	setDesiredAccuracy(desiredAccuracy: number): void;
 
-
-	setGeoLanguage(language: number): void;
+	setGeoLanguage(language: GeoLanguage): void;
 
 	setDistanceFilter(distance: number): void;
 
-	setOnceLocation(): Promise<string>; 
-
-	getLastKnownLocation(): Promise<string>;
+	setOnceLocation(onceLocation: boolean): void;
 
 }
 
