@@ -7,11 +7,11 @@
     "location",
     "geolocation"
   ],
-  "version": "1.2.3-0.0.1",
+  "version": "1.2.3-0.0.3",
   "author": "7c00 <i@7c00.cc>",
   "repository": {
     "type": "git",
-    "url": "https://github.com/qiuxiang/react-native-amap-geolocation"
+    "url": "https://github.com/react-native-oh-library/react-native-amap-geolocation"
   },
   "license": "MIT",
   "files": [
@@ -20,6 +20,10 @@
     "harmony",
     "lib/js"
   ],
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/",
+    "access": "public"
+  },
   "main": "lib/js",
   "scripts": {
     "build-docs": "npx typedoc --out docs/api --excludeNotExported --module commonjs --mode file src",
