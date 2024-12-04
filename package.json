@@ -24,7 +24,7 @@
     "registry": "https://registry.npmjs.org/",
     "access": "public"
   },
-  "main": "lib/js",
+  "main": "src/index.ts",
   "scripts": {
     "build-docs": "npx typedoc --out docs/api --excludeNotExported --module commonjs --mode file src",
     "start": "react-native start",
