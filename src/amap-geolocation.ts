@@ -54,6 +54,15 @@ export function setOnceLocation(isOnceLocation: boolean) {
 }
 
 /**
+ * 设置坐标系种类，true为高德坐标系，false为系统（WGS84）坐标系
+ *
+ * @default true
+ */
+export function setOffsetValue(isOffset: boolean) {
+  AMapGeolocation.setOffsetValue(isOffset);
+}
+
+/**
  * 设置是否返回地址信息，默认返回地址信息
  *
  * GPS 定位时也可以返回地址信息，但需要网络通畅，第一次有可能没有地址信息返回。

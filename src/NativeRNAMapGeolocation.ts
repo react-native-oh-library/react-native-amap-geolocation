@@ -66,6 +66,8 @@ export interface Spec extends TurboModule {
 
 	setOnceLocation(onceLocation: boolean): void;
 
+	setOffsetValue(isOffset: boolean): void;
+
 }
 
 export default TurboModuleRegistry.getEnforcing<Spec>("RNAMapGeolocation");

@@ -61,7 +61,7 @@ export class AMapGeolocationModule extends TurboModule implements IAMapLocationL
       locatingWithReGeocode: true,
       distanceInterval: 0,
       reGeocodeLanguage: AMapLocationReGeocodeLanguage.Chinese,
-      isOffset: false
+      isOffset: true
     }
   }
   onLocationChanged(location: AMapLocation): void {
@@ -245,6 +245,12 @@ export class AMapGeolocationModule extends TurboModule implements IAMapLocationL
   setAllowsBackgroundLocationUpdates(isAllow: boolean): void {
     if (this.options != null) {
       this.options.allowsBackgroundLocationUpdates = isAllow;
+    }
+  }
+
+  setOffsetValue(isOffset:boolean){
+    if (this.options != null) {
+      this.options.isOffset = isOffset;
     }
   }
 
